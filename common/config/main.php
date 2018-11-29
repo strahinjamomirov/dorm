@@ -1,6 +1,6 @@
 <?php
 return [
-    'name'       => 'Icarus',
+    'name'       => 'Stop Tackanju',
     'aliases'    => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
