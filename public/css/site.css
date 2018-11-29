@@ -1,0 +1,505 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.wrap > .container {
+    flex: 1 0 auto;
+    padding: 25px 15px 20px;
+}
+
+/*.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}*/
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: "\e151";
+}
+
+a.desc:after {
+    content: "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view td {
+    white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    min-width: 50px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .nav li > form > button.logout {
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+/***** CONFESS PAGE START *****/
+
+.confess-page {
+    background: url("../images/background.jpg") fixed;
+    background-size: cover;
+}
+
+.confess-container {
+    position: relative;
+    width: 300px;
+    margin: 80px auto;
+    padding: 20px 40px 40px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.confess-container::before, .confess-container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 3.5px;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    -webkit-transform: rotateZ(4deg);
+    -moz-transform: rotateZ(4deg);
+    -ms-transform: rotateZ(4deg);
+    border: 1px solid #ccc;
+
+}
+
+.confess-container::after {
+    top: 5px;
+    z-index: -2;
+    -webkit-transform: rotateZ(-2deg);
+    -moz-transform: rotateZ(-2deg);
+    -ms-transform: rotateZ(-2deg);
+}
+
+/***** CONFESS PAGE END *****/
+
+/***** FOOTER START *****/
+
+footer {
+    width: 100%;
+    bottom: 0;
+    background: rgb(20, 20, 20);
+    flex-shrink: 0;
+}
+
+footer a, footer a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer li {
+    cursor: pointer;
+}
+
+.social-image-facebook {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    padding-top: 10px;
+}
+
+.social-image-instagram {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    padding-top: 30px;
+}
+
+.social-image-site {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.copyRight {
+    display: block;
+    background-color: #041319;
+    padding: 20px 0;
+}
+
+.footerInfoArea {
+    width: 100%;
+    color: #fefec7;
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+.foot-sub-div-logo {
+    border-right: 1px solid rgba(100, 100, 100, 0.2);
+}
+
+#caption {
+    color: #fff;
+    text-align: center;
+    opacity: 0.7;
+    padding-top: 5px;
+    font-size: 10px;
+}
+
+#copyright {
+    color: #888;
+    font-size: 12px;
+}
+
+/***** FOOTER END *****/
+
+/***** HEADER START *****/
+
+/* NAVBAR CHANGES */
+.navbar-brand {
+    color: white;
+    height: 20px;
+    /*padding-top: 0;*/
+}
+
+.navbar-toggle {
+    border-color: #ffffff;
+    background-color: #ffffff;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #000000;
+}
+
+#menuBar {
+    margin-bottom: 0;
+}
+
+#pageTop {
+    background-color: #333;
+}
+
+.topList {
+    display: table-row;
+}
+
+.topList li {
+    display: inline-block;
+    height: 35px;
+    list-style-type: none;
+    margin: 0 10px;
+    vertical-align: middle;
+    line-height: 32px;
+}
+
+.topList li a {
+    text-decoration: none;
+    color: #cacaca;
+    border-bottom: 2px solid transparent;
+    display: block;
+    border-bottom: 2px solid #fff;
+    opacity: 1;
+}
+
+#second-navbar {
+    box-shadow: 0 3px 1px rgba(0, 0, 0, .3);
+    background-color: #55f;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#confess {
+    width: 170px;
+    padding-left: 10px;
+    display: block;
+    font-size: 18px;
+    background: url(/images/confess.png) no-repeat 130px 8px;
+    color: #cacaca;
+    border-right: 1px solid #000;
+    text-decoration: none;
+}
+
+dl, menu, ol, ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+/***** HEADER END *****/
+
+/***** CONFESSION *****/
+
+.post-index {
+    width: 600px;
+    padding-top: 3px;
+    opacity: 1;
+    display: inline-block;
+    background-color: rgba(50, 50, 50, 0.8);
+    margin-bottom: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+    float: left;
+}
+
+.confession-actions {
+    border-top: 1px solid rgba(200, 200, 200, .1);
+    height: 40px;
+    line-height: 32px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.confession-id, .confession-timestamp {
+    color: #FEFEFE;
+    opacity: .5;
+    font-size: 12px;
+    transition: opacity .2s linear;
+    text-decoration: none;
+}
+
+.confession {
+    background-color: rgba(50, 50, 50, .2);
+    letter-spacing: 1px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    cursor: pointer;
+    margin: 10px;
+}
+
+.confession-id {
+    float: left;
+}
+
+.confession-timestamp {
+    float: right;
+}
+
+.confession-top-content {
+    top: 0;
+    padding: 8px;
+    height: 15px;
+}
+
+.confession-data {
+    width: 100%;
+}
+
+.confession-text {
+    color: #fefec7;
+    padding: 10px 10px 20px;
+}
+
+.confession-values {
+    height: 28px;
+}
+
+.confession-value {
+    width: 25%;
+    text-align: center;
+    color: #FEFEFE;
+    opacity: .65;
+    font-size: 10px;
+    float: left;
+    margin-top: 10px;
+}
+
+.action-separator {
+    width: 0;
+    height: 26px;
+    margin-top: 7px;
+    float: left;
+    border-right: 1px solid rgba(200, 200, 200, .1);
+}
+
+.confession-action {
+    color: #DEDEDE;
+    float: left;
+    font-size: 12px;
+    width: 144px;
+    text-align: center;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.praise .slider {
+    background-color: #3eabff;
+}
+
+.condemn .slider {
+    background-color: #bf2c0f;
+}
+
+.comments-icon {
+    background-size: 23px;
+    background: url(/images/comment_empty.png) no-repeat 55px;
+    opacity: 0.8;
+}
+
+a.link-color:link {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+a.link-color:visited {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+a.link-color:hover {
+    color: #FFF;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+a.link-color:active {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.sidebar-content {
+    display: inline-block;
+    float: right;
+    background-color: rgba(50, 50, 50, .7);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+    margin-left: 15px;
+    width: 300px;
+    padding: 8px 10px;
+    position: relative;
+}
+
+/***** CONFESSION END *****/
+
+.media.comment {
+    font-size: 14px;
+    background: rgba(50, 50, 50, 0.15);
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.21);
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.21);
+}
+
+.report-comm{
+    float: right;
+    opacity: 1;
+    margin: 2px 2px 0 0;
+    cursor: pointer;
+}
+
+
+
+#comments{
+    color: white;
+}
+
+.control-label, .reply-title {
+    color:white;
+}
+
+#postcomment-content, #postcomment-author{
+    background: rgba(50, 50, 50, 0.8);
+}
+
+.font-change{
+    font-size: 12px;
+}
+
+.comment-body {
+    padding: 10px;
+}
+
+.report-post{
+    float:right;
+    color: #FEFEFE;
+    opacity: .5;
+    font-size: 12px;
+    transition: opacity .2s linear;
+    text-decoration: none;
+}
