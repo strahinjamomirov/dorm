@@ -12,7 +12,7 @@ use yii\widgets\Pjax;
 $this->title = 'Lista zahteva';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="changing-dorm-index" style="overflow:auto; overflow-y: hidden; height: 100%; width: 100%;">
+<div class="changing-dorm-index" style="overflow:auto; overflow-y: hidden; height: 100%;">
 
     <?php Box::begin([
         'encodeLabel' => false,
