@@ -12,38 +12,42 @@ $this->title = 'Lista pitanja';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="changing-dorm-index">
-    <?php Box::begin([
-        'encodeLabel' => false,
-        'collapsable' => false
-    ]); ?>
-    <?php Pjax::begin(); ?>
+    <div class="row">
+        <div class="col-xs-12">
+            <?php Box::begin([
+                'encodeLabel' => false,
+                'collapsable' => false
+            ]); ?>
+            <?php Pjax::begin(); ?>
 
-    <p>
-        <?= Html::a('Kreiraj pitanje', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+            <p>
+                <?= Html::a('Kreiraj pitanje', ['create'], ['class' => 'btn btn-success']) ?>
+            </p>
 
-    <?= GridView::widget([
-        'dataProvider' => $dataProvider,
-        'filterModel'  => $searchModel,
-        'columns'      => [
-            [
-                'attribute' => 'fb_link',
-                'label'     => 'Link ka Facebook nalogu',
-                'value'     => function ($model) {
-                    return Html::encode($model->fb_link);
-                }
-            ],
+            <?= GridView::widget([
+                'dataProvider' => $dataProvider,
+                'filterModel'  => $searchModel,
+                'columns'      => [
+                    [
+                        'attribute' => 'fb_link',
+                        'label'     => 'Link ka Facebook nalogu',
+                        'value'     => function ($model) {
+                            return Html::encode($model->fb_link);
+                        }
+                    ],
 
-            [
-                'attribute' => 'question',
-                'label'     => 'Pitanje',
-                'value'     => function ($model) {
-                    return Html::encode($model->question);
-                }
-            ],
-        ],
-    ]); ?>
-    <?php Pjax::end(); ?>
+                    [
+                        'attribute' => 'question',
+                        'label'     => 'Pitanje',
+                        'value'     => function ($model) {
+                            return Html::encode($model->question);
+                        }
+                    ],
+                ],
+            ]); ?>
+            <?php Pjax::end(); ?>
 
-    <?php Box::end() ?>
+            <?php Box::end() ?>
+        </div>
+    </div>
 </div>
