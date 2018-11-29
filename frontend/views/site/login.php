@@ -1,6 +1,7 @@
 <?php
-use yii\helpers\Html;
+
 use yii\bootstrap\ActiveForm;
+use yii\helpers\Html;
 use yii\helpers\Url;
 
 /* @var $this yii\web\View */
@@ -10,12 +11,12 @@ use yii\helpers\Url;
 $this->title = 'Ulogujte se';
 
 $fieldOptions1 = [
-    'options' => ['class' => 'form-group has-feedback'],
+    'options'       => ['class' => 'form-group has-feedback'],
     'inputTemplate' => "{input}<span class='glyphicon glyphicon-envelope form-control-feedback'></span>"
 ];
 
 $fieldOptions2 = [
-    'options' => ['class' => 'form-group has-feedback'],
+    'options'       => ['class' => 'form-group has-feedback'],
     'inputTemplate' => "{input}<span class='glyphicon glyphicon-lock form-control-feedback'></span>"
 ];
 ?>
@@ -45,10 +46,17 @@ $fieldOptions2 = [
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <?= Html::submitButton('Ulogujte se', ['class' => 'btn btn-primary btn-block btn-flat', 'name' => 'login-button']) ?>
-                <?= Html::a('Registrujte se', Url::to(['site/signup']), ['class' => 'btn btn-primary btn-block btn-flat', 'name' => 'register-button']) ?>
-
+                <?= Html::submitButton('Ulogujte se',
+                    ['class' => 'btn btn-success btn-block btn-flat', 'name' => 'login-button']) ?>
             </div>
+
+            <br>
+            <br>
+            <div class="col-xs-12">
+                <?= Html::a('Registrujte se', Url::to(['site/signup']),
+                    ['class' => 'btn btn-primary btn-block btn-flat', 'name' => 'register-button']) ?>
+            </div>
+
             <!-- /.col -->
         </div>
 

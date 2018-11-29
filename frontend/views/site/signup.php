@@ -39,9 +39,13 @@ $fieldOptions2 = [
 
         <div class="row">
             <div class="col-xs-12">
-                <?= Html::submitButton('Registrujte se', ['class' => 'btn btn-primary btn-block btn-flat', 'name' => 'register-button']) ?>
-                <?= Html::a('Ulogujte se', Url::to(['site/login']), ['class' => 'btn btn-primary btn-block btn-flat', 'name' => 'login-button']) ?>
+                <?= Html::submitButton('Registrujte se', ['class' => 'btn btn-success btn-block btn-flat', 'name' => 'register-button']) ?>
 
+            </div>
+            <br>
+            <br>
+            <div class="col-xs-12">
+                <?= Html::a('Ulogujte se', Url::to(['site/login']), ['class' => 'btn btn-primary btn-block btn-flat', 'name' => 'login-button']) ?>
             </div>
             <!-- /.col -->
         </div>
