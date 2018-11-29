@@ -5,5 +5,4 @@ return [
     'user.passwordResetTokenExpire' => 3600,
     'postPerPage' => 12,
     'siteTitle' => 'Confessions',
-    'deploy'=>include 'deploy.php'
 ];
