@@ -13,7 +13,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="changing-dorm-index">
     <div class="row">
-        <div class="col-xs-12">
+        <div class="col-xs-12" style="overflow:auto; overflow-y: hidden; height: 100%;">
             <?php Box::begin([
                 'encodeLabel' => false,
                 'collapsable' => false
