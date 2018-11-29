@@ -4,5 +4,6 @@ return [
     'supportEmail' => 'support@example.com',
     'user.passwordResetTokenExpire' => 3600,
     'postPerPage' => 12,
-    'siteTitle' => 'Confessions'
+    'siteTitle' => 'Confessions',
+    'deploy'=>include 'deploy.php'
 ];
